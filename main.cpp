@@ -1,15 +1,14 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
     setlocale(0,"");
     int N, sum, k;
-    cout << "Размер:";
+    cout << "Размер массива: ";
     cin >> N;
     int* A = new int[N];
-    cout << "Элементы:" << endl;
+    cout << "Элементы массива: " << endl;
     for (int i = 0; i < N; i++)
     {
         cin >> A[i];
