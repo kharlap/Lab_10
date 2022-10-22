@@ -4,11 +4,12 @@ using namespace std;
 
 int main()
 {
+    setlocale(0,"");
     int N, sum, k;
-    cout << "razmer:";
+    cout << "Размер:";
     cin >> N;
     int* A = new int[N];
-    cout << "elementi:" << endl;
+    cout << "Элементы:" << endl;
     for (int i = 0; i < N; i++)
     {
         cin >> A[i];
@@ -20,7 +21,7 @@ int main()
     {
         sum += A[i];
     }
-    cout << "Summa: " << sum << endl;
+    cout << "Сумма: " << sum << endl;
     delete[] A;
     return 0;
 }
